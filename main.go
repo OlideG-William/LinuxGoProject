@@ -18,6 +18,11 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
+
+	for i := 0; i < 10; i++ {
+		fmt.Println("Hello")
+	}
+
 	defer resp.Body.Close()
 	fmt.Println("Response status:", resp.Status)
 	scanner := bufio.NewScanner(resp.Body)
