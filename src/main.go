@@ -1,9 +1,9 @@
 package main
 
 import (
-	swapgo "mymod/src/swapingproc"
+	"github.com/OlideG-William/LinuxGoProject/src/swapingproc"
 )
 
 func main() {
-	swapgo.SwapProc()
+	swapingproc.SwapProc()
 }
